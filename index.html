@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captive Portal</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-[url('Bg.jpg')] bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center"> 
+  <main class="bg-gray-900 bg-opacity-80 max-w-3xl mx-auto p-6 rounded-lg shadow-2xl border border-blue-500">
+    <header class="text-center">
+      <div>
+        <img src="icon.webp" alt="Logo" class="mx-auto mt-4">
+        <h1 class="text-blue-400 text-5xl font-extrabold mt-10 tracking-wide animate-pulse">Welcome to the Congo Wi-Fi</h1>
+        <p class="text-gray-300 text-2xl mt-2">Choose a package that suits you:</p>
+      </div>
+    </header>
+
+    <section class="grid grid-cols-2 gap-4 mt-6">
+      <!-- Package selection squares with icons -->
+      <div class="bg-gray-800 text-gray-300 text-center p-4 rounded-lg shadow-lg cursor-pointer hover:bg-blue-500 hover:shadow-blue-500 hover:shadow-lg transition duration-300 flex flex-col items-center">
+        <i class="fas fa-wifi text-blue-400 text-3xl"></i>
+        <p class="mt-2">$1 - 2hrs @ 2Mbps</p>
+      </div>
+      <div class="bg-gray-800 text-gray-300 text-center p-4 rounded-lg shadow-lg cursor-pointer hover:bg-blue-500 hover:shadow-blue-500 hover:shadow-lg transition duration-300 flex flex-col items-center">
+        <i class="fas fa-clock text-green-400 text-3xl"></i>
+        <p class="mt-2">$3 - 24hrs @ 2Mbps</p>
+      </div>
+      <div class="bg-gray-800 text-gray-300 text-center p-4 rounded-lg shadow-lg cursor-pointer hover:bg-blue-500 hover:shadow-blue-500 hover:shadow-lg transition duration-300 flex flex-col items-center">
+        <i class="fas fa-bolt text-yellow-400 text-3xl"></i>
+        <p class="mt-2">$5 - 48hrs @ 2Mbps</p>
+      </div>
+      <div class="bg-gray-800 text-gray-300 text-center p-4 rounded-lg shadow-lg cursor-pointer hover:bg-blue-500 hover:shadow-blue-500 hover:shadow-lg transition duration-300 flex flex-col items-center">
+        <i class="fas fa-calendar-week text-purple-400 text-3xl"></i>
+        <p class="mt-2">$7 - 72hrs @ 2Mbps</p>
+      </div>
+      <div class="bg-gray-800 text-gray-300 text-center p-4 rounded-lg shadow-lg cursor-pointer hover:bg-blue-500 hover:shadow-blue-500 hover:shadow-lg transition duration-300 flex flex-col items-center">
+        <i class="fas fa-calendar-alt text-red-400 text-3xl"></i>
+        <p class="mt-2">$13 - 1 Week @ 2Mbps (2 Devices)</p>
+      </div>
+      <div class="bg-gray-800 text-gray-300 text-center p-4 rounded-lg shadow-lg cursor-pointer hover:bg-blue-500 hover:shadow-blue-500 hover:shadow-lg transition duration-300 flex flex-col items-center">
+        <i class="fas fa-infinity text-orange-400 text-3xl"></i>
+        <p class="mt-2">$26 - 1 Month @ 5Mbps (3 Devices)</p>
+      </div>
+    </section>
+
+    <!-- Admin Login Form -->
+    <section class="mt-8 text-center">
+      <h2 class="text-gray-300 text-2xl mb-4 tracking-wide">Admin Login</h2>
+      <form class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-sm mx-auto border border-blue-500">
+        <div class="mb-4">
+          <label for="username" class="block text-gray-300 text-left">Username</label>
+          <input type="text" id="username" class="w-full p-2 border border-gray-600 rounded-lg bg-gray-700 text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-gray-300 text-left">Password</label>
+          <input type="password" id="password" class="w-full p-2 border border-gray-600 rounded-lg bg-gray-700 text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:shadow-blue-500 hover:shadow-lg transition duration-300">Login</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
+<!-- This is a simple HTML page for a captive portal with Tailwind CSS styling. 
+     It includes a welcome message, package selection options with icons, and an admin login form. 
+     The design is responsive and uses Tailwind CSS classes for styling. -->
+<!-- The page is structured with a header, a grid for package options, and a form for admin login.
+     The icons are from Font Awesome, and the background image is set to cover the entire screen. 
+     The page is designed to be visually appealing and user-friendly, with hover effects on the package options and buttons. -->
